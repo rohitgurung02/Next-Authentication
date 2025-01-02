@@ -18,9 +18,9 @@ export const createOrUpdate = async (
         $set: {
           firstName: first_name,
           lastName: last_name,
-          avatar: image_url,
           email: email_addresses[0].email,
-          username: username,
+          userName: username,
+          image: image_url,
         },
       },
       { new: true, upsert: true } // if user is not exist then it will create it and exist then it will be updated
