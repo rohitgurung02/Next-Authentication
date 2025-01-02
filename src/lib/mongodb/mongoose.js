@@ -13,7 +13,7 @@ if (intialized) {
 
 try {
   await mongoose.connnect(process.env.MONGODB_URI, {
-    dbName: "next-auth-app",
+    dbName: "Authentication",
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
